@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<ns1:UserList
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='http://xml.netbeans.org/schema/User'
+    xsi:schemaLocation='http://xml.netbeans.org/schema/User file:/Users/birui/NetBeansProjects/JAXBDemo/src/java/com/schema/User.xsd'>
+    <ns1:UserInfo>
+        <ns1:username>jack10</ns1:username>
+        <ns1:password>jack</ns1:password>
+        <ns1:birth>
+            <ns1:birth_year>1990</ns1:birth_year>
+            <ns1:birth_month>02</ns1:birth_month>
+        </ns1:birth>
+        <ns1:name>
+            <ns1:first_name>Jack</ns1:first_name>
+            <ns1:last_name>White</ns1:last_name>
+        </ns1:name>
+        <ns1:email>jack10@pitt.edu</ns1:email>
+    </ns1:UserInfo>
+    <ns1:UserInfo>
+        <ns1:username>rose39</ns1:username>
+        <ns1:password>rose</ns1:password>
+        <ns1:birth>
+            <ns1:birth_year>1989</ns1:birth_year>
+            <ns1:birth_month>12</ns1:birth_month>
+        </ns1:birth>
+        <ns1:name>
+            <ns1:first_name>Rose</ns1:first_name>
+            <ns1:last_name>Wholey</ns1:last_name>
+        </ns1:name>
+        <ns1:email>rose39@pitt.edu</ns1:email>
+    </ns1:UserInfo>
+    <ns1:UserInfo>
+        <ns1:username>tim45</ns1:username>
+        <ns1:password>tim</ns1:password>
+        <ns1:birth>
+            <ns1:birth_year>1991</ns1:birth_year>
+            <ns1:birth_month>05</ns1:birth_month>
+        </ns1:birth>
+        <ns1:name>
+            <ns1:first_name>Tim</ns1:first_name>
+            <ns1:last_name>Black</ns1:last_name>
+        </ns1:name>
+        <ns1:email>tim45@pitt.edu</ns1:email>
+    </ns1:UserInfo>
+
+</ns1:UserList>
