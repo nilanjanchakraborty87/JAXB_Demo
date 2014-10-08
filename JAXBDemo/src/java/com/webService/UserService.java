@@ -6,6 +6,7 @@
 package com.webService;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -69,7 +70,7 @@ public class UserService {
      * Web service operation
      */
     @WebMethod(operationName = "Register")
-    public Boolean Register(@WebParam(name = "username") String username, @WebParam(name = "password") String password, @WebParam(name = "birth_year") String year, @WebParam(name = "birth_month") String month, @WebParam(name = "email") String email, @WebParam(name = "first_name") String first_name, @WebParam(name = "last_name") String last_name) {
+    public Boolean Register(@WebParam(name = "username") String username, @WebParam(name = "password") String password, @WebParam(name = "birth_year") String year, @WebParam(name = "birth_month") String month, @WebParam(name = "email") String email, @WebParam(name = "first_name") String first_name, @WebParam(name = "last_name") String last_name) throws IOException {
         //TODO write your implementation code here:
         UserList newList = new UserList();
         UserInfo newUser = new UserInfo();
@@ -87,12 +88,15 @@ public class UserService {
         try {
             JAXBContext jaxbc = JAXBContext.newInstance("org.netbeans.xml.schema.user");
             Unmarshaller unmarshaller = jaxbc.createUnmarshaller();
-            newList = (UserList) ((JAXBElement) unmarshaller.unmarshal(new File("UserList.xml"))).getValue();
+            File file = new File("UserList.xml");
+            if(!file.exists())
+                file.createNewFile();// useless..
+            newList = (UserList) ((JAXBElement) unmarshaller.unmarshal(file)).getValue();
             newList.addUserInfo(newUser);
             Marshaller marshaller = jaxbc.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.setProperty(Marshaller.JAXB_FRAGMENT, true);
-            marshaller.marshal(newList,new File("UserList.xml"));
+            marshaller.marshal(newList,file);
             marshaller.marshal(newList,System.out);
             return true;
         } catch (JAXBException ex) {

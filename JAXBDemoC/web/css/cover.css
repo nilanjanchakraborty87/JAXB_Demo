@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color:#9999FF;
+  background-color:#CC6699;
 }
 body {
   color: #fff;
@@ -127,12 +127,12 @@ body {
 	box-shadow: 0 2px 2px #ccc;
 	}
 .result th{
-	color: #9999FF;
+	color: #CC6699;
 	text-align:center;
 }
 .result td,.result a{
 	padding:1% 1% 1% 1%;
-	color: #9999FF;
+	color: #CC6699;
 	text-align:left;
 	text-decoration:none;
 	text-shadow:none;}
@@ -144,8 +144,10 @@ body {
   color: #EAEAEA;
 }
 
-.modal-dialog,.modal-content{
-    background-color: #9999FF!important;
+.modal form,.modal-dialog,.modal-content{
+    background-color: #CC6699!important;
+    alignment-baseline: central;
+    text-align: center;
 }
 
 /*

@@ -10,7 +10,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>JAX-WS Example</title>
+        <title>JAXB Example</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
                     <div class="masthead clearfix">
                         <div class="inner">
-                            <h3 class="masthead-brand">JAX-WS Client Login</h3>
+                            <h3 class="masthead-brand">JAXB Client Login</h3>
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="index.jsp">Home</a></li>
                                 <li><a href="about.jsp">About</a></li>
@@ -63,7 +63,7 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                <h4 class="modal-title" id="myModalLabel" style="color: #285e8e">Sign Up</h4>
+                                                <h4 class="modal-title" id="myModalLabel" >Sign Up</h4>
                                             </div>
                                             <form role="form" class="form" action="UserServlet?method=register" method=post>
                                                 <div class="modal-body">

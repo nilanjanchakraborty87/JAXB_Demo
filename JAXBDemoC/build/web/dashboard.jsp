@@ -11,7 +11,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Twitter Search</title>
+        <title>JAXB Demo</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
                     <div class="masthead clearfix">
                         <div class="inner">
-                            <h3 class="masthead-brand">JAX-WS Client Login</h3>
+                            <h3 class="masthead-brand">JAXB Client Login</h3>
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="index.jsp">Home</a></li>
                                 <li><a href="about.jsp">About</a></li>
@@ -37,7 +37,7 @@
 
                     <div class="row result" style="margin-top:25%">
                         <div class="col-lg-offset-2 col-lg-8">
-                            <h2 style="color: #9999FF">Your Information:</h2>
+                            <h2 style="color: #CC6699">Your Information:</h2>
                             <table class="table table-hover">
                                 <thead><tr><th><a >Attributes</a></th><th><a>Content</a></th></tr></thead>
                                 <tbody >
